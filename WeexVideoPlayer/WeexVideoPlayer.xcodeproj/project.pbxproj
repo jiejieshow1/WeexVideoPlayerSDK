@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C49FEE5241B7CA900926FCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C49FEE4241B7CA900926FCF /* AppDelegate.m */; };
+		6C49FEE8241B7CA900926FCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C49FEE7241B7CA900926FCF /* ViewController.m */; };
+		6C49FEEB241B7CA900926FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C49FEE9241B7CA900926FCF /* Main.storyboard */; };
+		6C49FEED241B7CAA00926FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C49FEEC241B7CAA00926FCF /* Assets.xcassets */; };
+		6C49FEF0241B7CAA00926FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C49FEEE241B7CAA00926FCF /* LaunchScreen.storyboard */; };
+		6C49FEF3241B7CAA00926FCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C49FEF2241B7CAA00926FCF /* main.m */; };
+		6C49FEFD241B7CAB00926FCF /* WeexVideoPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C49FEFC241B7CAB00926FCF /* WeexVideoPlayerTests.m */; };
+		6C49FF08241B7CAB00926FCF /* WeexVideoPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C49FF07241B7CAB00926FCF /* WeexVideoPlayerUITests.m */; };
+		6C49FF1C241B7CC400926FCF /* TBVideoRequestTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C49FF16241B7CC300926FCF /* TBVideoRequestTask.m */; };
+		6C49FF1D241B7CC400926FCF /* BGWeexVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C49FF1A241B7CC300926FCF /* BGWeexVideoPlayer.m */; };
+		6C49FF1E241B7CC400926FCF /* TBloaderURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C49FF1B241B7CC300926FCF /* TBloaderURLConnection.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C49FEF9241B7CAB00926FCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C49FED8241B7CA900926FCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C49FEDF241B7CA900926FCF;
+			remoteInfo = WeexVideoPlayer;
+		};
+		6C49FF04241B7CAB00926FCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C49FED8241B7CA900926FCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C49FEDF241B7CA900926FCF;
+			remoteInfo = WeexVideoPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C49FEE0241B7CA900926FCF /* WeexVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeexVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C49FEE3241B7CA900926FCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6C49FEE4241B7CA900926FCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6C49FEE6241B7CA900926FCF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6C49FEE7241B7CA900926FCF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6C49FEEA241B7CA900926FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C49FEEC241B7CAA00926FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6C49FEEF241B7CAA00926FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C49FEF1241B7CAA00926FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C49FEF2241B7CAA00926FCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6C49FEF8241B7CAB00926FCF /* WeexVideoPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeexVideoPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C49FEFC241B7CAB00926FCF /* WeexVideoPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeexVideoPlayerTests.m; sourceTree = "<group>"; };
+		6C49FEFE241B7CAB00926FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C49FF03241B7CAB00926FCF /* WeexVideoPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeexVideoPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C49FF07241B7CAB00926FCF /* WeexVideoPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeexVideoPlayerUITests.m; sourceTree = "<group>"; };
+		6C49FF09241B7CAB00926FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C49FF16241B7CC300926FCF /* TBVideoRequestTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBVideoRequestTask.m; sourceTree = "<group>"; };
+		6C49FF17241B7CC300926FCF /* TBloaderURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBloaderURLConnection.h; sourceTree = "<group>"; };
+		6C49FF18241B7CC300926FCF /* BGWeexVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGWeexVideoPlayer.h; sourceTree = "<group>"; };
+		6C49FF19241B7CC300926FCF /* TBVideoRequestTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBVideoRequestTask.h; sourceTree = "<group>"; };
+		6C49FF1A241B7CC300926FCF /* BGWeexVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGWeexVideoPlayer.m; sourceTree = "<group>"; };
+		6C49FF1B241B7CC300926FCF /* TBloaderURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBloaderURLConnection.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C49FEDD241B7CA900926FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C49FEF5241B7CAB00926FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C49FF00241B7CAB00926FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C49FED7241B7CA900926FCF = {
+			isa = PBXGroup;
+			children = (
+				6C49FF15241B7CC300926FCF /* source */,
+				6C49FEE2241B7CA900926FCF /* WeexVideoPlayer */,
+				6C49FEFB241B7CAB00926FCF /* WeexVideoPlayerTests */,
+				6C49FF06241B7CAB00926FCF /* WeexVideoPlayerUITests */,
+				6C49FEE1241B7CA900926FCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C49FEE1241B7CA900926FCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C49FEE0241B7CA900926FCF /* WeexVideoPlayer.app */,
+				6C49FEF8241B7CAB00926FCF /* WeexVideoPlayerTests.xctest */,
+				6C49FF03241B7CAB00926FCF /* WeexVideoPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C49FEE2241B7CA900926FCF /* WeexVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				6C49FEE3241B7CA900926FCF /* AppDelegate.h */,
+				6C49FEE4241B7CA900926FCF /* AppDelegate.m */,
+				6C49FEE6241B7CA900926FCF /* ViewController.h */,
+				6C49FEE7241B7CA900926FCF /* ViewController.m */,
+				6C49FEE9241B7CA900926FCF /* Main.storyboard */,
+				6C49FEEC241B7CAA00926FCF /* Assets.xcassets */,
+				6C49FEEE241B7CAA00926FCF /* LaunchScreen.storyboard */,
+				6C49FEF1241B7CAA00926FCF /* Info.plist */,
+				6C49FEF2241B7CAA00926FCF /* main.m */,
+			);
+			path = WeexVideoPlayer;
+			sourceTree = "<group>";
+		};
+		6C49FEFB241B7CAB00926FCF /* WeexVideoPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C49FEFC241B7CAB00926FCF /* WeexVideoPlayerTests.m */,
+				6C49FEFE241B7CAB00926FCF /* Info.plist */,
+			);
+			path = WeexVideoPlayerTests;
+			sourceTree = "<group>";
+		};
+		6C49FF06241B7CAB00926FCF /* WeexVideoPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6C49FF07241B7CAB00926FCF /* WeexVideoPlayerUITests.m */,
+				6C49FF09241B7CAB00926FCF /* Info.plist */,
+			);
+			path = WeexVideoPlayerUITests;
+			sourceTree = "<group>";
+		};
+		6C49FF15241B7CC300926FCF /* source */ = {
+			isa = PBXGroup;
+			children = (
+				6C49FF16241B7CC300926FCF /* TBVideoRequestTask.m */,
+				6C49FF17241B7CC300926FCF /* TBloaderURLConnection.h */,
+				6C49FF18241B7CC300926FCF /* BGWeexVideoPlayer.h */,
+				6C49FF19241B7CC300926FCF /* TBVideoRequestTask.h */,
+				6C49FF1A241B7CC300926FCF /* BGWeexVideoPlayer.m */,
+				6C49FF1B241B7CC300926FCF /* TBloaderURLConnection.m */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C49FEDF241B7CA900926FCF /* WeexVideoPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C49FF0C241B7CAB00926FCF /* Build configuration list for PBXNativeTarget "WeexVideoPlayer" */;
+			buildPhases = (
+				6C49FEDC241B7CA900926FCF /* Sources */,
+				6C49FEDD241B7CA900926FCF /* Frameworks */,
+				6C49FEDE241B7CA900926FCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeexVideoPlayer;
+			productName = WeexVideoPlayer;
+			productReference = 6C49FEE0241B7CA900926FCF /* WeexVideoPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C49FEF7241B7CAB00926FCF /* WeexVideoPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C49FF0F241B7CAB00926FCF /* Build configuration list for PBXNativeTarget "WeexVideoPlayerTests" */;
+			buildPhases = (
+				6C49FEF4241B7CAB00926FCF /* Sources */,
+				6C49FEF5241B7CAB00926FCF /* Frameworks */,
+				6C49FEF6241B7CAB00926FCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C49FEFA241B7CAB00926FCF /* PBXTargetDependency */,
+			);
+			name = WeexVideoPlayerTests;
+			productName = WeexVideoPlayerTests;
+			productReference = 6C49FEF8241B7CAB00926FCF /* WeexVideoPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6C49FF02241B7CAB00926FCF /* WeexVideoPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C49FF12241B7CAB00926FCF /* Build configuration list for PBXNativeTarget "WeexVideoPlayerUITests" */;
+			buildPhases = (
+				6C49FEFF241B7CAB00926FCF /* Sources */,
+				6C49FF00241B7CAB00926FCF /* Frameworks */,
+				6C49FF01241B7CAB00926FCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C49FF05241B7CAB00926FCF /* PBXTargetDependency */,
+			);
+			name = WeexVideoPlayerUITests;
+			productName = WeexVideoPlayerUITests;
+			productReference = 6C49FF03241B7CAB00926FCF /* WeexVideoPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C49FED8241B7CA900926FCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Pariven;
+				TargetAttributes = {
+					6C49FEDF241B7CA900926FCF = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					6C49FEF7241B7CAB00926FCF = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6C49FEDF241B7CA900926FCF;
+					};
+					6C49FF02241B7CAB00926FCF = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6C49FEDF241B7CA900926FCF;
+					};
+				};
+			};
+			buildConfigurationList = 6C49FEDB241B7CA900926FCF /* Build configuration list for PBXProject "WeexVideoPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C49FED7241B7CA900926FCF;
+			productRefGroup = 6C49FEE1241B7CA900926FCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C49FEDF241B7CA900926FCF /* WeexVideoPlayer */,
+				6C49FEF7241B7CAB00926FCF /* WeexVideoPlayerTests */,
+				6C49FF02241B7CAB00926FCF /* WeexVideoPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C49FEDE241B7CA900926FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C49FEF0241B7CAA00926FCF /* LaunchScreen.storyboard in Resources */,
+				6C49FEED241B7CAA00926FCF /* Assets.xcassets in Resources */,
+				6C49FEEB241B7CA900926FCF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C49FEF6241B7CAB00926FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C49FF01241B7CAB00926FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C49FEDC241B7CA900926FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C49FF1C241B7CC400926FCF /* TBVideoRequestTask.m in Sources */,
+				6C49FEE8241B7CA900926FCF /* ViewController.m in Sources */,
+				6C49FF1E241B7CC400926FCF /* TBloaderURLConnection.m in Sources */,
+				6C49FEF3241B7CAA00926FCF /* main.m in Sources */,
+				6C49FEE5241B7CA900926FCF /* AppDelegate.m in Sources */,
+				6C49FF1D241B7CC400926FCF /* BGWeexVideoPlayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C49FEF4241B7CAB00926FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C49FEFD241B7CAB00926FCF /* WeexVideoPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C49FEFF241B7CAB00926FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C49FF08241B7CAB00926FCF /* WeexVideoPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C49FEFA241B7CAB00926FCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C49FEDF241B7CA900926FCF /* WeexVideoPlayer */;
+			targetProxy = 6C49FEF9241B7CAB00926FCF /* PBXContainerItemProxy */;
+		};
+		6C49FF05241B7CAB00926FCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C49FEDF241B7CA900926FCF /* WeexVideoPlayer */;
+			targetProxy = 6C49FF04241B7CAB00926FCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C49FEE9241B7CA900926FCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C49FEEA241B7CA900926FCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C49FEEE241B7CAA00926FCF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C49FEEF241B7CAA00926FCF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C49FF0A241B7CAB00926FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6C49FF0B241B7CAB00926FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C49FF0D241B7CAB00926FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WeexVideoPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.bingosoft.WeexVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C49FF0E241B7CAB00926FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WeexVideoPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.bingosoft.WeexVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6C49FF10241B7CAB00926FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WeexVideoPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.bingosoft.WeexVideoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeexVideoPlayer.app/WeexVideoPlayer";
+			};
+			name = Debug;
+		};
+		6C49FF11241B7CAB00926FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WeexVideoPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.bingosoft.WeexVideoPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeexVideoPlayer.app/WeexVideoPlayer";
+			};
+			name = Release;
+		};
+		6C49FF13241B7CAB00926FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WeexVideoPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.bingosoft.WeexVideoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WeexVideoPlayer;
+			};
+			name = Debug;
+		};
+		6C49FF14241B7CAB00926FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WeexVideoPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.bingosoft.WeexVideoPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WeexVideoPlayer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C49FEDB241B7CA900926FCF /* Build configuration list for PBXProject "WeexVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C49FF0A241B7CAB00926FCF /* Debug */,
+				6C49FF0B241B7CAB00926FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C49FF0C241B7CAB00926FCF /* Build configuration list for PBXNativeTarget "WeexVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C49FF0D241B7CAB00926FCF /* Debug */,
+				6C49FF0E241B7CAB00926FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C49FF0F241B7CAB00926FCF /* Build configuration list for PBXNativeTarget "WeexVideoPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C49FF10241B7CAB00926FCF /* Debug */,
+				6C49FF11241B7CAB00926FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C49FF12241B7CAB00926FCF /* Build configuration list for PBXNativeTarget "WeexVideoPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C49FF13241B7CAB00926FCF /* Debug */,
+				6C49FF14241B7CAB00926FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C49FED8241B7CA900926FCF /* Project object */;
+}
