@@ -9,7 +9,7 @@
 
 #import "BGWeexVideoPlayer.h"
 #import "TBloaderURLConnection.h"
-#import "MBProgressHUD.h"
+//#import "MBProgressHUD.h"
 //#import "TBVideoRequestTask.h"
 //#import "XCHudHelper.h"
 #define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
@@ -186,9 +186,7 @@ NSString *const BLBPlayerLoadProgressChangedNotification = @"BLPlayerLoadProgres
         [showView addSubview:_navBar];
     }
     [self buildVideoNavBar];
-    
-    //    [[XCHudHelper sharedInstance] showHudOnView:_showView caption:nil image:nil acitivity:YES autoHideTime:0];
-    [MBProgressHUD showHUDAddedTo:_showView animated:YES];
+//    [MBProgressHUD showHUDAddedTo:_showView animated:YES];
     [[NSNotificationCenter defaultCenter] postNotificationName:BLBPlayerProgressChangedNotification object:nil];
     
     //    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(halfScreen)];
@@ -247,7 +245,7 @@ NSString *const BLBPlayerLoadProgressChangedNotification = @"BLPlayerLoadProgres
         [_stopButton setImage:[self imageNamed:@"icon_pause_hl"] forState:UIControlStateHighlighted];
         [self.player play];
         self.state = TBPlayerStatePlaying;
-        [MBProgressHUD hideHUDForView:_showView animated:YES];
+//        [MBProgressHUD hideHUDForView:_showView animated:YES];
     }
     self.isPauseByUser = YES;
 }
@@ -351,7 +349,7 @@ NSString *const BLBPlayerLoadProgressChangedNotification = @"BLPlayerLoadProgres
         
         if (playerItem.isPlaybackBufferEmpty) {
             self.state = TBPlayerStateBuffering;
-            [MBProgressHUD showHUDAddedTo:_showView animated:YES];
+//            [MBProgressHUD showHUDAddedTo:_showView animated:YES];
             [self bufferingSomeSecond];
         }
     }
@@ -363,7 +361,7 @@ NSString *const BLBPlayerLoadProgressChangedNotification = @"BLPlayerLoadProgres
     self.duration = playerItem.duration.value / playerItem.duration.timescale; //视频总时间
     [self.player play];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [MBProgressHUD hideAllHUDsForView:self.showView animated:YES];
+//        [MBProgressHUD hideAllHUDsForView:self.showView animated:YES];
     });
     [self updateTotolTime:self.duration];
     [self setPlaySliderValue:self.duration];
@@ -447,14 +445,14 @@ NSString *const BLBPlayerLoadProgressChangedNotification = @"BLPlayerLoadProgres
 {
     if (state != TBPlayerStateBuffering) {
         //        [[XCHudHelper sharedInstance] hideHud];
-        [MBProgressHUD hideHUDForView:_showView animated:YES];
+//        [MBProgressHUD hideHUDForView:_showView animated:YES];
         
     }
     if (state != TBPlayerStatePlaying) {
-        [MBProgressHUD hideHUDForView:_showView animated:YES];
+//        [MBProgressHUD hideHUDForView:_showView animated:YES];
     }
     if (state == TBPlayerStateBuffering) {
-        [MBProgressHUD showHUDAddedTo:_showView animated:YES];
+//        [MBProgressHUD showHUDAddedTo:_showView animated:YES];
     }
     if (_state == state) {
         return;
