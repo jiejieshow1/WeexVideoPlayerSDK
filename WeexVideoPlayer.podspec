@@ -63,8 +63,7 @@ weex视频流播放插件,并边下边播
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # spec.platform     = :ios
-  # spec.platform     = :ios, "9.0"
+   spec.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "9.0"
@@ -112,7 +111,7 @@ weex视频流播放插件,并边下边播
   #  the lib prefix of their name.
   #
 
-  # spec.frameworks = "UIKit", "Foundation"
+   spec.frameworks = "UIKit", "Foundation"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
@@ -126,7 +125,7 @@ weex视频流播放插件,并边下边播
 
   # spec.requires_arc = true
 
-  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PLATFORM_DIR)/Developer/Library/Frameworks" }
-  # spec.dependency "MBProgressHUD"
+   spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PLATFORM_DIR)/Developer/Library/Frameworks" }
+   spec.dependency "MBProgressHUD"
 
 end

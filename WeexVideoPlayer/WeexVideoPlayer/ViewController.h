@@ -2,7 +2,7 @@
 //  ViewController.h
 //  WeexVideoPlayer
 //
-//  Created by Pariven on 2020/3/13.
+//  Created by Pariven on 2020/3/16.
 //  Copyright © 2020 Pariven. All rights reserved.
 //
 

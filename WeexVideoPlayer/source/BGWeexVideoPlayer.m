@@ -186,6 +186,8 @@ NSString *const BLBPlayerLoadProgressChangedNotification = @"BLPlayerLoadProgres
         [showView addSubview:_navBar];
     }
     [self buildVideoNavBar];
+    
+    //    [[XCHudHelper sharedInstance] showHudOnView:_showView caption:nil image:nil acitivity:YES autoHideTime:0];
 //    [MBProgressHUD showHUDAddedTo:_showView animated:YES];
     [[NSNotificationCenter defaultCenter] postNotificationName:BLBPlayerProgressChangedNotification object:nil];
     
