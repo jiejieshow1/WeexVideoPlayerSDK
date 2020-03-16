@@ -2,7 +2,7 @@
 #  Be sure to run `pod spec lint WeexVideoPlayer.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
-#  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
+# To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "WeexVideoPlayer"
+  spec.name         = "weexvideoplayer"
   spec.version      = "0.0.1"
   spec.summary      = "weex播放插件"
 
@@ -39,8 +39,7 @@ weex视频流播放插件,并边下边播
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT"
-  # spec.license      = { :type => "MIT", :file => "LICENSE" }
+  spec.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +90,7 @@ weex视频流播放插件,并边下边播
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Class", "WeexVideoPlayer/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "WeexVideoPlayer", "WeexVideoPlayer/**/*.{h,m}"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -117,8 +115,7 @@ weex视频流播放插件,并边下边播
   #  the lib prefix of their name.
   #
 
-  # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
+  # spec.frameworks = "UIKit", "Foundation"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
@@ -133,6 +130,6 @@ weex视频流播放插件,并边下边播
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(PLATFORM_DIR)/Developer/Library/Frameworks" }
-  # spec.dependency "JSONKit", "~> 1.4"
+  # spec.dependency "MBProgressHUD"
 
 end
